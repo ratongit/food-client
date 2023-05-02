@@ -20,6 +20,7 @@ import Orders from './components/Orders.jsx';
 import PrivateRoute from './Routes/PrivetRoute.jsx';
 import UserProfile from './components/UserProfile.jsx';
 import NotFound from './components/404page/404';
+import Data from './components/dataload/Data';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
 {
   path: "/",
   element:<Home></Home>,
-
+  
 },
 {
   path: "/orders",
@@ -62,16 +63,21 @@ const router = createBrowserRouter([
 
 },
 
+{
+  path: "/register",
+  element:<Register></Register>,
+
+},
+{
+  path: "/news",
+  element:<Data></Data>,
+
+},
           
     {
 
       path: "/*",
       element:<NotFound></NotFound>
-    },
-    {
-      path: "/register",
-      element:<Register></Register>,
-    
     },
     
   

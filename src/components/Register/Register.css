@@ -1,8 +1,17 @@
-*{
+
+.card,.form-control,input{
     background-image:url(https://mytheme.io/recipes/wp-content/themes/recipes/images/default-background.jpg) ;
 }
-.card{ width: 500px;
-}
 .hero-top{
-    margin-top: -80px;
+    margin:-50px auto 0 auto ;
+}
+
+body{
+    background-image:url(https://mytheme.io/recipes/wp-content/themes/recipes/images/default-background.jpg) !important;
+ 
+}
+
+.Registion-div{
+    display: grid;
+    
 }

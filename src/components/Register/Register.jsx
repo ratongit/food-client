@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import  { useContext, useState } from "react";
 import { AuthContex } from "../../Probiders/AuthProviders";
 import Header from "../Header/Header";
-import './Register.css'
+import "./Register.css"
 
  
 // const auth = getAuth(app)
@@ -54,16 +54,16 @@ const HendleRegister = (event) => {
 
 
     return (
-        <div>    
-<Header></Header>
-<div className="hero min-h-screen bg-base-200 text-white rounded hero-top">
+      <div className="Registion-div" >
+      <Header></Header>
+<div className="  hero-top">
   <div className="hero-content block">
-      <h1 className="text-5xl font-bold block mb-8">Register</h1>
+      <h1 className="text-5xl font-bold text-dark block mb-8 text-white">Register</h1>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 block">
       <  form onSubmit={HendleRegister} className="card-body">
         <div className="form-control">
           <label className="label">
-            <span className="label-text text-white">First Name</span>
+            <span className="label-text text-white ">First Name</span>
           </label>
           <input type="text" className="text-white" name="name" id="name" placeholder="Your  Name" required></input>
         </div>

@@ -1,6 +1,5 @@
-import React from "react";
 import chef1 from '../../../assets/chef1.jpg'
-import food from '../../../assets/food.jpg'
+// import food from '../../../assets/food.jpg'
 import food2 from '../../../assets/food2.jpg'
 import food3 from '../../../assets/food3.webp'
 import "./Banner.css"
