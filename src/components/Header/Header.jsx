@@ -66,21 +66,11 @@ const HendleLogOut=()=>{
   }
 
 
-      {/* <li><a id="loginBtn" href="/login">Login</a></li>
-      <li><a id="register" href="/register">Register</a></li> */}
     </ul>
   </div>
 </div>
 
 
-
-{/* {
-  user  &&
-  <><span>{user.email}</span> <button onClick={HendleLogOut} className="btn" id="signout"> sing  out</button> 
-
-</> 
-}
- */}
 
 
         </div >

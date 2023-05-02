@@ -1,5 +1,5 @@
 // import React, { useState } from "react";
-// import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup, signOut } from "firebase/auth";
+// import { GithubAuthProvider,  GoogleAuthProvider,  getAuth, signInWithPopup, signOut } from "firebase/auth";
 // import app from "../../FairBase/firebass.config";
 
 
@@ -57,19 +57,15 @@
 //     return (
 
 //         <div>
-//             {
-//                 user ?
-//                     <button onClick={handleGoogleSingOut}>Sing out</button> :
-//                     <>
+          
+//                     <button onClick={handleGoogleSingOut}>Singout</button> 
+//                    <br />
 //                     <button onClick={handleGoogleSingIn}>login</button>
+//                     <br />
 //                     <button onClick={handleGitHabSingIn}>GitHab Singin</button>
-//                     </>
-//             }
-//             {user && <div>
-//                 <h2>User:{user.displayName}</h2>
-//                 <p> Email: {user.email}</p>
-//             </div>
-//             }
+                    
+           
+           
 
 //         </div>
 
