@@ -32,6 +32,18 @@ git push -u origin main
  * cline side -
  * https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-sabboshachi546 
  *  
+ * 
+ * https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-sabboshachi546
+ * 
+ * 
+ * 
+ * 
+ * srever site -
+ * https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-sabboshachi546
+ * 
+ * 
+ * 
+ * https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-sabboshachi546
  *  
  *  
  *  
