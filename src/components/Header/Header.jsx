@@ -40,23 +40,8 @@ const HendleLogOut=()=>{
   {!user &&
 
 
-  <li><a id="loginBtn" href="#"><div className="dropdown dropdown-bottom dropdown-end">
-  <label tabIndex={0} >Login</label>
-  <ul tabIndex={0} className="dropdown-content py-2  menu mt-5 border-white border-e-4 border-s-4 rounded-box w-52">
-
-    <li><a href="/login">LogIn With Email</a>
-
-     <br /><hr className='text-white w-100 mx-2 bg-inherit hr'  /></li>
-
-    <li><a>LogIn with Google</a> 
-
-    <hr className='text-white w-100 mx-2 hr' /></li>
-
-    <li><a>LogIn with GitHab</a></li>
-
-  </ul>
-</div>
-</a></li>
+  <li><a id="loginBtn" href="/login">Login</a>
+ </li>
 
 
 

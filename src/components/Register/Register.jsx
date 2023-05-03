@@ -3,6 +3,7 @@ import  { useContext, useState } from "react";
 import { AuthContex } from "../../Probiders/AuthProviders";
 import Header from "../Header/Header";
 import "./Register.css"
+import LoginWithGoogle from "../Login/LoginWithGoogle";
 
  
 // const auth = getAuth(app)
@@ -56,6 +57,9 @@ const HendleRegister = (event) => {
     return (
       <div className="Registion-div" >
       <Header></Header>
+      <div className="float-right">
+      <LoginWithGoogle></LoginWithGoogle>
+      </div>
 <div className="  hero-top">
   <div className="hero-content block">
       <h1 className="text-5xl font-bold text-dark block mb-8 text-white">Register</h1>

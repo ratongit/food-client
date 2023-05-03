@@ -4,7 +4,6 @@ import { AuthContex } from "../../Probiders/AuthProviders";
 const Home=()=>{
 
     const user = useContext(AuthContex)
-console.log(user);
 
     return (
         <div>

@@ -6,13 +6,14 @@ import { useContext } from "react";
 import { AuthContex } from "../../Probiders/AuthProviders";
 import Header from "../Header/Header";
 import './login.css'
+import LoginWithGoogle from "./LoginWithGoogle";
 
 
 
 const Login=()=>{
 
+  
   const {signIn}=useContext(AuthContex)
-console.log(signIn)
 const [email, setEmail] = useState('')    
 
 
@@ -22,7 +23,6 @@ const HendleSubmit = (event) => {
     const form=event.target
     const email = form.email.value
     const password = form.password.value
-    console.log(email, password)
 
     signIn(email,password)
     .then(result => {
@@ -41,13 +41,15 @@ const HendleSubmit = (event) => {
 
 
     return (
-        <div>    
+        <div className="background" >    
+
 
 <Header></Header>
 
-<div className="hero min-h-screen herotop">
+        <div className="login-card d-inline mt-0" >    
+<div className="hero min-h-screen mt-0 ">
   <div className="hero-content block">
-      <h1 className="text-5xl text-white font-bold block mb-10">Log in</h1>
+      <h1 className="text-5xl text-white font-bold block mb-10 top-logIn">Log in</h1>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 block">
       <  form onSubmit={HendleSubmit} className="card-body">
         <div className="form-control">
@@ -74,6 +76,7 @@ const HendleSubmit = (event) => {
   </div>
 </div>
 
+        </div>
         </div>
     )
 

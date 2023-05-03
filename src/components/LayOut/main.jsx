@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import CarouselFadeExample from "../Header/banner/Banner";
 import './main.css'
 import Chaf from "../chefDatais/Chef";
+import LoginWithGoogle from "../Login/LoginWithGoogle";
 const Main=()=>{
 
     return (
@@ -11,6 +12,8 @@ const Main=()=>{
             <h2>This is main page</h2>
         
         <Header></Header>
+        <br />
+        <LoginWithGoogle></LoginWithGoogle>
 <div id="carousel">
 
 <CarouselFadeExample></CarouselFadeExample>
