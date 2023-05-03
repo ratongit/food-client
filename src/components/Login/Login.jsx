@@ -1,12 +1,11 @@
 // import React from "react";
 
 import React, { useState } from "react";
-import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth'
 import { useContext } from "react";
 import { AuthContex } from "../../Probiders/AuthProviders";
 import Header from "../Header/Header";
 import './login.css'
-import LoginWithGoogle from "./LoginWithGoogle";
+import Footer from "../footer/Footer";
 
 
 
@@ -77,6 +76,7 @@ const HendleSubmit = (event) => {
 </div>
 
         </div>
+        <Footer></Footer>
         </div>
     )
 

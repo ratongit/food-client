@@ -11,6 +11,17 @@ const Chaf = () => {
       .catch(error => console.error(error))
   }, [])
 
+
+
+ const hendleRecipesDatial=()=>{
+  if (user) {
+    return alert(`welcome ${user.name}`);
+  } else {
+    return alert('Please login');
+  }
+ }
+
+
   return (
     
     <div className="chef-card pt-5 ">
@@ -53,7 +64,7 @@ const Chaf = () => {
             chef.details
           }</p>
             <div className="card-actions justify-end">
-              <a href="/recipes" className="badge w-50 h-10 mt-3 text-info badge-outline">Recipes</a>
+              <a href="/recipes" className="badge w-50 h-10 mt-3 text-info badge-outline" onClick={hendleRecipesDatial}>Recipes</a>
             </div>
           </div>
         </div>

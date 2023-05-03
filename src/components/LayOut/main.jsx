@@ -5,6 +5,7 @@ import CarouselFadeExample from "../Header/banner/Banner";
 import './main.css'
 import Chaf from "../chefDatais/Chef";
 import LoginWithGoogle from "../Login/LoginWithGoogle";
+import Footer from "../footer/Footer";
 const Main=()=>{
 
     return (
@@ -19,7 +20,7 @@ const Main=()=>{
 <CarouselFadeExample></CarouselFadeExample>
 </div>
 <Chaf></Chaf>
-
+<Footer></Footer>
         <Outlet></Outlet>
 
 

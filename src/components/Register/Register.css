@@ -8,10 +8,12 @@
 
 body{
     background-image:url(https://mytheme.io/recipes/wp-content/themes/recipes/images/default-background.jpg) !important;
- 
+    
 }
 
 .Registion-div{
     display: grid;
+
     
+background-image:url(https://mytheme.io/recipes/wp-content/themes/recipes/images/default-background.jpg) !important;
 }

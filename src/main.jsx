@@ -18,9 +18,9 @@ import Register from './components/Register/Register.jsx';
 import AuthProniders from './Probiders/AuthProviders.jsx';
 import Orders from './components/Orders.jsx';
 import PrivateRoute from './Routes/PrivetRoute.jsx';
-import UserProfile from './components/UserProfile.jsx';
 import NotFound from './components/404page/404';
 import Data from './components/dataload/Data';
+import Recipes from './components/UserProfile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -55,10 +55,10 @@ const router = createBrowserRouter([
   
 },
 {
-  path: "/profile",
+  path: "/recipes",
   element:
   <PrivateRoute> 
-     <UserProfile></UserProfile>
+     <Recipes></Recipes>
   </PrivateRoute>,
 
 },

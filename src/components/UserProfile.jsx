@@ -1,7 +1,7 @@
 import React from "react";
 import './userProfile.css'
 import Header from "./Header/Header";
-const UserProfile=()=>{
+const Recipes=()=>{
 
 
     return (
@@ -16,4 +16,4 @@ Your UserProfile      </h2>
 
 }
 
-export default UserProfile;
+export default Recipes;

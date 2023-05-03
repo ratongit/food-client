@@ -4,6 +4,7 @@ import { AuthContex } from "../../Probiders/AuthProviders";
 import Header from "../Header/Header";
 import "./Register.css"
 import LoginWithGoogle from "../Login/LoginWithGoogle";
+import Footer from "../footer/Footer";
 
  
 // const auth = getAuth(app)
@@ -25,7 +26,6 @@ const HendleRegister = (event) => {
     const password = form.password.value
     const fristName = form.name.value
     console.log(email, password,fristName)
-
 
     //new code start//
     createUser(email,password)
@@ -73,6 +73,12 @@ const HendleRegister = (event) => {
         </div>
         <div className="form-control">
           <label className="label">
+            <span className="label-text text-white ">Photo</span>
+          </label>
+          <input type="text" className="text-white" name="name" id="name" placeholder="Your Photo URL" required></input>
+        </div>
+        <div className="form-control">
+          <label className="label">
             <span className="label-text text-white">Email</span>
           </label>
           <input type="email" name="eamil" className="text-white" id="email" placeholder="Your Email" required></input>
@@ -94,7 +100,7 @@ const HendleRegister = (event) => {
         </div>
   </div>
 </div>
-
+<Footer></Footer>
         </div>
     )
 
