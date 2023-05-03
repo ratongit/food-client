@@ -34,15 +34,26 @@ const Chaf = () => {
 
 
         <div className="card w-96 bg-base-100 shadow-xl ">
-          <figure><img src="https://m.media-amazon.com/images/I/811QmJcr+-L._SL1500_.jpg" alt="Shoes" /></figure>
+          <figure><img className="img" src=   {
+            chef.img
+          }
+           alt="Shoes" /></figure>
+
+       
           <div className="card-body">
             <h2 className="card-title">
-              MR : ROY KRISHNA
-              <div className="badge badge-secondary">India</div>
+            {
+            chef.name
+          }
+              <div className="badge badge-secondary"> {
+            chef.country
+          }</div>
             </h2>
-            <p>Best Indian Deshi Food In Best Comination.</p>
+            <p>  {
+            chef.details
+          }</p>
             <div className="card-actions justify-end">
-              <div className="badge w-50 h-10 mt-3 text-info badge-outline">Recipes</div>
+              <a href="/recipes" className="badge w-50 h-10 mt-3 text-info badge-outline">Recipes</a>
             </div>
           </div>
         </div>
