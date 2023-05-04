@@ -6,11 +6,17 @@ import Footer from "./footer/Footer";
 
 const Recipes=()=>{
 
+  const [buttonDisabled, setButtonDisabled] = useState(false);
+
+    
+    function handleClick(event) {
+      event.target.disabled = true;
+    }
 
 
     const [chefs, setChefs] = useState([])
     useEffect(() => {
-      fetch("http://localhost:5000/chefs")
+      fetch("https://chef-recipe-server-iaaj0fr3b-shuvomohanto129-gmailcom.vercel.app/chefs")
         .then(res => res.json())
         .then(data => setChefs(data))
         .catch(error => console.error(error))
@@ -31,7 +37,7 @@ const Recipes=()=>{
     
    
 
-            <div className="card card-compact  bg-base-100 shadow-xl">
+            <div className="Recipes-card  card card-compact  bg-base-100 shadow-xl">
   <figure><img src={
             chef.img
           }
@@ -40,30 +46,42 @@ const Recipes=()=>{
     <h2 className="card-title">{
             chef.name
           }</h2>
-          <h2>
+
+
+
+          <div className="flex justify-between">
           {
               chef.Recipes.map(food=>
-                <h1><p>Recipe name :
-                    <br />
-                    </p>{food.name
-                    }
-                    <br />
-                    <br />
-                    <p>Recipes details: </p>
-                    {food.details
-                    }
-                    <br />
-                    <br />
-                    
-                    
-                    </h1>
+
+
+                <div className="card w-80 bg-base-100 shadow-xl">
+  <div className="card-body">
+
+    <div className="text-center">
+
+    <h2 className="card-title ">{food.name
+                    }</h2>
+
+    </div>
+
+    <p>{food.details
+                    }</p>
+  </div>
+  <figure><img src={food.img
+                    }alt="Shoes" /></figure>
+                   
+      <button className="btn btn-primary btn-disable bg-fuchsia-700" onClick={handleClick} disabled={buttonDisabled}>Like it</button>
+  
+
+
+                    </div>
                     
                 )
           }
-          </h2>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary" >Like it</button>
-    </div>
+          </div>
+
+
+
   </div>
 </div>
 
