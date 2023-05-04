@@ -21,6 +21,8 @@ import PrivateRoute from './Routes/PrivetRoute.jsx';
 import NotFound from './components/404page/404';
 import Data from './components/dataload/Data';
 import Recipes from './components/UserProfile.jsx';
+import UserProfile from './components/uesrproflie/userprofile';
+import Blogs from './components/blogs/blog';
 
 const router = createBrowserRouter([
   {
@@ -60,6 +62,22 @@ const router = createBrowserRouter([
   <PrivateRoute> 
      <Recipes></Recipes>
   </PrivateRoute>,
+
+},
+{
+  path: "/profile",
+  element:
+  <PrivateRoute> 
+    <UserProfile></UserProfile>
+  </PrivateRoute>,
+
+},
+{
+  path: "/blog",
+  element:
+  <PrivateRoute> 
+<Blogs></Blogs>
+    </PrivateRoute>,
 
 },
 

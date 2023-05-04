@@ -12,14 +12,10 @@ const Chaf = () => {
   }, [])
 
 
+  const hendleChefDetails=()=>{
 
- const hendleRecipesDatial=()=>{
-  if (user) {
-    return alert(`welcome ${user.name}`);
-  } else {
-    return alert('Please login');
+    
   }
- }
 
 
   return (
@@ -38,8 +34,8 @@ const Chaf = () => {
 
 
 
-{
-  chefs.map(chef=>
+ {
+  chefs.map(chef=> 
 
 
 
@@ -63,8 +59,19 @@ const Chaf = () => {
             <p>  {
             chef.details
           }</p>
-            <div className="card-actions justify-end">
-              <a href="/recipes" className="badge w-50 h-10 mt-3 text-info badge-outline" onClick={hendleRecipesDatial}>Recipes</a>
+            <div className="card-actions justify-between flex">
+              <div>
+              <a className="badge  h-10 mt-3 text-info badge-outline"> {
+            chef.Experience
+          } years Experience</a>
+              </div>
+              <div>
+              <a href="/recipes" 
+
+              onClick={hendleChefDetails} 
+
+              className="badge  h-10 mt-3 text-info badge-outline"> Viws Recipes </a>
+              </div>
             </div>
           </div>
         </div>
@@ -75,7 +82,7 @@ const Chaf = () => {
 
 
 )
-}
+} 
 
 
       </div>

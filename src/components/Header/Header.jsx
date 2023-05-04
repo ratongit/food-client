@@ -28,11 +28,11 @@ const HendleLogOut=()=>{
       <li ><a href="/">Home</a></li>
 
 
-      <li ><Link to='/orders'>Order</Link></li>
+      <li ><Link to='/profile'>Profile</Link></li>
 
 
-     {user && <li ><Link to='/profile'>Profile</Link></li>}
-     {user && <li  onClick={HendleLogOut}><button className="">Log Out</button></li>}
+     {user && <li ><a href="/blog">Blogs</a></li>}
+     {user && <li  onClick={HendleLogOut}><button >Log Out</button></li>}
 
 
 
